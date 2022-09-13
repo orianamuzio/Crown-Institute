@@ -1,0 +1,936 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 350pxfr 1fr 1fr 350fr;
+    grid-template-areas: "header header header header"
+        "main main main main"
+        "main main main main"
+        "footer footer footer footer";
+}
+
+header {
+    grid-area: header;
+    background-color: #7F0101;
+}
+
+main {
+    grid-area: main;
+    background-color: #002261;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #7F0101;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    padding-left: 3em;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+
+
+/* ESPACIO INPUT xd */
+
+.espacio-input {
+    margin: 0.4em;
+}
+
+
+/* ESTILOS TEXTOS */
+
+.texto-normal {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+
+.texto-normal-mediano {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 23px;
+}
+
+/* ESTILOS BOTONES */
+
+.boton-inicio {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    background-color: #002261;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+
+
+/*  INICIO */
+
+.titulo-inicio {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    padding-left: 3.2rem;
+    padding-top: 3rem;
+}
+
+.subtitulo-inicio {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    padding-left: 3em;
+    padding-bottom: 2.5em;
+}
+
+.nav-inicio {
+    list-style: none;
+    text-decoration: none;
+    text-align: right;
+    padding-right: 4em;
+    padding-bottom: 2em;
+    position: absolute;
+    left: 46em;
+    top: 4.3em;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.item-nav-inicio {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    padding-left: 2em;
+}
+
+.imagenes-inicio {
+    display: flex;
+    flex-direction: row;
+}
+
+.imagen-uno-inicio {
+    width: 30%;
+    height: 303px;
+}
+
+.imagen-dos-inicio {
+    height: 303px;
+    width: 70%;
+}
+
+.titulo-inicio-dos {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 45px;
+    width: 90%;
+}
+
+.texto-uno-inicio {
+    grid-area: texto;
+}
+
+.titulo-y-texto {
+    width: 65%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.section-uno-inicio {
+    width: 90%;
+    margin: 5% auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.texto-y-logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "texto texto .";
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.logo-grande-inicio {
+    grid-area: logo-grande;
+    width: 250px;
+    height: 250px;
+}
+
+.caja-textitos {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 0 5% 0;
+}
+
+.titulo-textitos {
+    color: white;
+    background-color: #7F0101;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.textitos-inicio {
+    color: black;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    padding: 15px;
+}
+
+
+.titulo-ubi-inicio {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 45px;
+}
+
+.texto-y-ubi {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.mapa-inicio {
+    height: 60%;
+    width: 100%;
+    margin: 5% 5% 5% 0;
+}
+
+.ubicacion-inicio {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+
+
+
+/* CURSOS */
+
+.body-cursos {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 120px 1fr 1fr 100px;
+    grid-template-areas: "header header header header"
+        "main main main main"
+        "main main main main"
+        "footer footer footer footer";
+}
+
+.titulo-cursos {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    padding-left: 3.2rem;
+    padding-top: 2.3rem;
+    margin-bottom: 2.3rem;
+}
+
+.nav-cursos {
+    list-style: none;
+    text-decoration: none;
+    text-align: right;
+    padding-right: 4em;
+    padding-bottom: 2em;
+    position: absolute;
+    left: 46em;
+    top: 3.6em;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.item-nav-cursos {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    padding-left: 2em;
+}
+
+.texto-uno-cursos {
+    margin: 5% 4%;
+}
+
+.texto-dos-cursos {
+    width: 30%;
+    margin: 4% 0 5% 7%;
+    text-align: center;
+}
+
+.section-uno-cursos {
+    display: flex;
+}
+
+.caja-uno-cursos {
+    background-color: white;
+    width: 45%;
+    height: 70%;
+    margin: 0 0 5% 10%
+}
+
+.flex-cajas {
+    display: flex;
+}
+
+.titulo-minicajas-cursos {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.minicaja-viajes {
+    background-color: #002261e2;
+    width: 46%;
+    height: 44%;
+    margin: 15px 6px 10px 13px;
+}
+
+.minicaja-trabajo {
+    background-color: #002261e2;
+    width: 46%;
+    height: 44%;
+    margin: 15px 6px 10px 13px;
+}
+
+.minicaja-hobby {
+    background-color: #002261e2;
+    width: 46%;
+    height: 44%;
+    margin: 10px 6px 10px 13px;
+}
+
+.minicaja-profesionales {
+    background-color: #002261e2;
+    width: 46%;
+    height: 44%;
+    margin: 10px 6px 10px 13px;
+}
+
+
+/* EXAMENES */
+
+.body-examenes {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 120px 1fr 1fr 100px;
+    grid-template-areas: "header header header header"
+        "main main main main"
+        "main main main main"
+        "footer footer footer footer";
+}
+
+.titulo-examenes {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    padding-left: 3.2rem;
+    padding-top: 2.3rem;
+    margin-bottom: 2.3rem;
+}
+
+.nav-examenes {
+    list-style: none;
+    text-decoration: none;
+    text-align: right;
+    padding-right: 4em;
+    padding-bottom: 2em;
+    position: absolute;
+    left: 46em;
+    top: 3.6em;
+    display: flex;
+    flex-direction: row;
+}
+
+.item-nav-examenes {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    padding-left: 2em;
+}
+
+.section-uno-examenes {
+    display: flex;
+}
+
+.caja-internacionales {
+    width: 100%;
+}
+
+.caja-local {
+    width: 90%;
+}
+
+.titulo-cajas-examenes {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    padding: 3rem 1rem 1rem 2rem;
+}
+
+.texto-cajas-examenes {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    padding: 0.3rem 8rem 1rem 2rem;
+}
+
+.texto-lista-examenes {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    list-style: none;
+    padding: 1rem 0 3rem 3rem;
+}
+
+
+/* COVID */
+
+.body-covid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 130px 1fr 1fr 100px;
+    grid-template-areas: "header header header header"
+        "main main main main"
+        "main main main main"
+        "footer footer footer footer";
+}
+
+.titulo-covid {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    padding-left: 3.2rem;
+    padding-top: 2.3rem;
+    margin-bottom: 2.3rem;
+}
+
+.nav-covid {
+    list-style: none;
+    text-decoration: none;
+    text-align: right;
+    padding-right: 4em;
+    padding-bottom: 2em;
+    position: absolute;
+    left: 46em;
+    top: 3.6em;
+    display: flex;
+    flex-direction: row;
+}
+
+.item-nav-covid {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    padding-left: 2em;
+}
+
+.titulo-dos-covid {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    margin: 5rem 0 2rem 3rem;
+}
+
+.flex-cajas-covid {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cajas-covid {
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+.titulo-cajas-covid {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    margin: 0 0 1rem 0;
+}
+
+
+/* CONTACTO */
+
+.body-contacto {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 130px 1fr 1fr 100px;
+    grid-template-areas: "header header header header"
+        "main main main main"
+        "main main main main"
+        "footer footer footer footer";
+}
+
+.titulo-contacto {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    padding-left: 3.2rem;
+    padding-top: 2.3rem;
+    margin-bottom: 2.3rem;
+}
+
+.nav-contacto {
+    list-style: none;
+    text-decoration: none;
+    text-align: right;
+    padding-right: 4em;
+    padding-bottom: 2em;
+    position: absolute;
+    left: 46em;
+    top: 3.6em;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.item-nav-contacto {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    padding-left: 2em;
+}
+
+.titulo-formulario-contacto {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    padding-left: 55px;
+    margin: 5% auto 2.5% auto;
+}
+
+.formulario-contacto {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DESKTOP FIRST */
+
+
+
+@media only screen and (max-width: 1200px) {
+
+    /* INICIO */
+
+    .nav-inicio {
+        left: 40em;
+    }
+
+    .caja-logo-inicio {
+        top: 37rem;
+        left: 55rem;
+    }
+
+    .ubicacion-inicio {
+        top: 60rem;
+        left: 34rem;
+    }
+
+    .caja-textitos {
+        margin-left: 2%;
+    }
+
+    /* CURSOS */
+
+
+    /* CONTACTO */
+
+    .nav-contacto {
+        left: 40rem;
+    }
+
+    /* CURSOS */
+
+    .nav-cursos {
+        left: 40em;
+    }
+
+    /* EXAMENES */
+
+    .nav-examenes {
+        left: 40rem;
+    }
+
+    /* COVID */
+
+    .nav-covid {
+        left: 40rem;
+    }
+
+
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+
+    /* INICIO */
+
+    .nav-inicio {
+        left: 31em;
+    }
+
+    .caja-logo-inicio {
+        top: 37rem;
+        left: 47rem;
+    }
+
+    .ubicacion-inicio {
+        top: 60rem;
+        left: 28rem;
+    }
+
+    /* CURSOS */
+
+    /* EXAMENES */
+
+    .nav-examenes {
+        left: 31em;
+    }
+
+    /* COVID */
+
+    .nav-covid {
+        left: 31em;
+    }
+
+
+    /* CONTACTO */
+
+    .nav-contacto {
+        text-align: left;
+        padding-right: 4em;
+        padding-bottom: 2em;
+        position: relative;
+        left: 0;
+        top: 0;
+        margin-left: 1.4rem;
+    }
+
+    .titulo-contacto {
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        font-size: 40px;
+        padding-left: 3.2rem;
+        padding-top: 2.3rem;
+        margin-bottom: 0.7rem;
+    }
+
+    /* CURSOS */
+
+    .nav-cursos {
+        left: 30em;
+    }    
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+
+    /* INICIO */
+
+    .nav-inicio {
+        text-align: center;
+        position: relative;
+        left: 1em;
+        top: 0em;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .item-nav-inicio {
+        font-size: 13px;
+    }
+
+    .logo-grande-inicio {
+        display: none;
+    }
+
+    .titulo-y-texto {
+        width: 90%;
+        justify-content: center;
+        text-align: center;
+        margin: 2rem 0 2rem 0;
+    }
+
+    .titulo-inicio-dos {
+        text-align: center;
+        font-size: 32px;
+        width: 90%;
+        margin-bottom: 2rem;
+        padding-left: 1rem;
+    }
+
+    .caja-textitos {
+        display: flex;
+        background-color: white;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    .texto-y-ubi {
+        width: 90%;
+        margin: 0 auto;
+        display: inline;
+    }
+
+
+    .ubicacion-inicio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10%;
+    }
+
+    .mapa-inicio {
+        height: 20%;
+        width: 70%;
+    }
+
+
+    /* CURSOS */
+
+    .body-cursos {
+        grid-template-rows: 150px 1fr 1fr 100px;
+        grid-template-areas: "header header header header"
+            "main main main main"
+            "main main main main"
+            "footer footer footer footer";
+    }
+
+    .nav-cursos {
+        text-align: center;
+        position: relative;
+        left: 1em;
+        top: 0em;
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .item-nav-cursos {
+        font-size: 13px;
+    }
+
+    .section-uno-cursos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto-uno-cursos {
+        margin: 5% 7%;
+        text-align: center;
+    }
+
+    .texto-dos-cursos {
+        width: 90%;
+        margin: 4% 0 5% 5%;
+        text-align: center;
+    }
+
+    .caja-uno-cursos {
+        background-color: white;
+        display: inline-block;
+        width: 80%;
+        height: 70%;
+        margin: auto
+    }
+
+    .titulo-minicajas-cursos {
+        
+        font-size: 17px;
+        text-align: center;
+        padding: 4rem 0;
+    }
+
+
+    /* EXAMENES */
+
+    .body-examenes {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 150px 1fr 1fr 100px;
+        grid-template-areas: "header header header header"
+            "main main main main"
+            "main main main main"
+            "footer footer footer footer";
+    }
+
+    .nav-examenes {
+        text-align: left;
+        padding-left: 0.6em;
+        padding-bottom: 2em;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .item-nav-examenes {
+        font-size: 13px;
+    }
+
+    .section-uno-examenes {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* COVID */
+
+    .body-covid {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 150px 1fr 1fr 100px;
+        grid-template-areas: "header header header header"
+            "main main main main"
+            "main main main main"
+            "footer footer footer footer";
+    }
+
+    .nav-covid {
+        text-align: left;
+        padding-left: 0.6em;
+        padding-bottom: 2em;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .item-nav-covid {
+        font-size: 13px;
+    }
+
+    .titulo-dos-covid {
+        font-size: 30px;
+        text-align: center;
+        margin: 5rem 1rem 2rem 1rem;
+    }
+
+    .flex-cajas-covid {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+
+    /* CONTACTO */
+
+    .body-contacto {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 150px 1fr 1fr 100px;
+        grid-template-areas: "header header header header"
+            "main main main main"
+            "main main main main"
+            "footer footer footer footer";
+    }
+
+    .titulo-contacto {
+        font-size: 35px;
+        padding-left: 2rem;
+        padding-top: 2.3rem;
+        margin-bottom: 2.3rem;
+    }
+
+    .nav-contacto {
+        text-align: left;
+        padding-left: 0.6em;
+        padding-bottom: 2em;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .item-nav-contacto {
+        font-size: 12px;
+    }
+
+
+
+
+
+
+}
