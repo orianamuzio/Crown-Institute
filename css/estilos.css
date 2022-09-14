@@ -80,6 +80,13 @@ footer {
 
 /*  INICIO */
 
+.header-inicio {
+    grid-area: header;
+    background-color: #7F0101;
+    position: sticky;
+    top: 0%;
+}
+
 .titulo-inicio {
     color: white;
     font-family: 'Raleway', sans-serif;
@@ -178,10 +185,22 @@ footer {
 
 .caja-textitos {
     display: flex;
-    background-color: white;
     flex-direction: column;
     width: 30%;
     margin: 0 0 5% 0;
+}
+
+.cajita {
+    margin-bottom: 2.5rem;
+}
+
+.transicion-cajita {
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.transicion-cajita:hover {
+    transform: scale(1.2);
 }
 
 .titulo-textitos {
@@ -337,6 +356,15 @@ footer {
     width: 46%;
     height: 44%;
     margin: 10px 6px 10px 13px;
+}
+
+.transicion-minicajas {
+    transition-timing-function: ease-out;
+    transition: 2s;
+}
+
+.transicion-minicajas:hover {
+    transform: rotateY(180deg);
 }
 
 
