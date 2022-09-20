@@ -124,7 +124,7 @@ footer {
 
 
 .item-nav-inicio {
-    color: white;
+    color: white !important;
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
     text-decoration: none;
