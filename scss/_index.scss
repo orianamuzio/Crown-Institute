@@ -126,7 +126,7 @@
 
             .textitos-inicio {
                 color: map-get($colores, "negro");
-                background-color: white;
+                background-color: map-get($colores, "blanco");
                 font-family: 'Raleway', sans-serif;
                 font-size: 15px;
                 text-align: center;
