@@ -4,6 +4,8 @@
   -ms-grid-column-span: 4;
   grid-area: header;
   background-color: #7F0101;
+  position: sticky;
+  top: 0%;
 }
 .header-inicio .titulo-inicio {
   color: white;

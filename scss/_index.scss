@@ -3,6 +3,8 @@
 .header-inicio {
     grid-area: header;
     background-color: map-get($colores, "rojo");
+    position: sticky;
+    top: 0%;
 
     .titulo-inicio {
         color: map-get($colores, "blanco");
