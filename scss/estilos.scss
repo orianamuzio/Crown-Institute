@@ -1,0 +1,41 @@
+@import "./variables";
+@import "./index";
+@import "./cursos";
+@import "./examenes";
+@import "./COVID-19";
+@import "./contacto";
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 350pxfr 1fr 1fr 350fr;
+    grid-template-areas: "header header header header"
+        "main main main main"
+        "main main main main"
+        "footer footer footer footer";
+
+    header {
+        grid-area: header;
+        background-color: map-get($colores, "rojo");
+    }
+
+    main {
+        grid-area: main;
+        background-color: map-get($colores, "azul");
+    }
+}
+
+footer {
+    grid-area: footer;
+    background-color: map-get($colores, "rojo");
+    color: map-get($colores, "blanco");
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    padding-left: 3em;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
