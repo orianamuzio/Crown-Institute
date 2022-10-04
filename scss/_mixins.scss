@@ -161,9 +161,5 @@
             margin: 5% 5% 5% 0;
         }
 
-        @mixin texto-normal {
-            color: map-get($colores, "blanco");
-            font-family: 'Raleway', sans-serif;
-            font-size: 15px;
-        }
+        @include texto-normal;
     }
