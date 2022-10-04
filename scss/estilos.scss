@@ -1,9 +1,14 @@
+@import "./mixins";
 @import "./variables";
 @import "./index";
 @import "./cursos";
 @import "./examenes";
 @import "./COVID-19";
 @import "./contacto";
+
+*{
+    @include reset
+}
 
 body {
     width: 100vw;

@@ -1,0 +1,169 @@
+@mixin reset {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@mixin header-inicio {
+    grid-area: header;
+    background-color: map-get($colores, "rojo");
+    position: sticky;
+    top: 0%;
+
+    @mixin titulo-inicio {
+        color: map-get($colores, "blanco");
+        font-family: 'Raleway', sans-serif;
+        font-size: 40px;
+        padding-left: 3.2rem;
+        padding-top: 3rem;
+    }
+
+    @mixin subtitulo-inicio {
+        color: map-get($colores, "blanco");
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        padding-left: 3em;
+        padding-bottom: 2.5em;
+    }
+
+    @mixin nav-inicio {
+        text-align: right;
+        padding-right: 4em;
+        padding-bottom: 2em;
+        position: absolute;
+        left: 46em;
+        top: 7em;
+        display: flex;
+        flex-direction: row;
+
+        @mixin item-nav-inicio {
+            color: map-get($colores, "blanco");
+            font-family: 'Raleway', sans-serif;
+            font-size: 15px;
+            text-decoration: none;
+            padding-left: 2em;
+        }
+    }
+}
+
+@mixin imagenes-inicio {
+    display: flex;
+    flex-direction: row;
+
+    @mixin imagen-uno-inicio {
+        width: 30%;
+        height: 303px;
+    }
+
+    @mixin imagen-dos-inicio {
+        height: 303px;
+        width: 70%;
+    }
+
+}
+
+@mixin section-uno-inicio {
+    width: 90%;
+    margin: 5% auto;
+    display: flex;
+    justify-content: space-around;
+
+    @mixin titulo-y-texto {
+        width: 65%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        @mixin titulo-inicio-dos {
+            color: map-get($colores, "blanco");
+            font-family: 'Raleway', sans-serif;
+            font-size: 45px;
+            width: 90%;
+        }
+
+        @mixin texto-normal {
+            color: map-get($colores, "blanco");
+            font-family: 'Raleway', sans-serif;
+            font-size: 15px;
+        }
+    }
+
+    @mixin logo-grande-inicio {
+        grid-area: logo-grande;
+        width: 250px;
+        height: 250px;
+    }
+}
+
+
+
+@mixin texto-y-ubi {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+    @mixin caja-textitos {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin: 0 0 5% 0;
+
+        @mixin cajita {
+            margin-bottom: 2.5rem;
+        }
+
+        @mixin transicion-cajita {
+            transition: 1s;
+            transition-timing-function: ease-in-out;
+        }
+
+            @mixin titulo-textitos {
+                color: map-get($colores, "blanco");
+                background-color: map-get($colores, "rojo");
+                font-family: 'Raleway', sans-serif;
+                font-size: 30px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                text-align: center;
+            }
+
+            @mixin textitos-inicio {
+                color: map-get($colores, "negro");
+                background-color: map-get($colores, "blanco");
+                font-family: 'Raleway', sans-serif;
+                font-size: 15px;
+                text-align: center;
+                padding: 15px;
+            }
+        }
+
+        @mixin transicion-cajita:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    @mixin ubicacion-inicio {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+
+        @mixin titulo-ubi-inicio {
+            color: map-get($colores, "blanco");
+            font-family: 'Raleway', sans-serif;
+            font-size: 45px;
+        }
+
+        @mixin mapa-inicio {
+            height: 60%;
+            width: 100%;
+            margin: 5% 5% 5% 0;
+        }
+
+        @mixin texto-normal {
+            color: map-get($colores, "blanco");
+            font-family: 'Raleway', sans-serif;
+            font-size: 15px;
+        }
+    }
