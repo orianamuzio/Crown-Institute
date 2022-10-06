@@ -1,9 +1,6 @@
 .header-inicio {
     position: sticky;
     top: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     .titulo-inicio {
         color: white;
         font-family: $fuente;
@@ -14,6 +11,10 @@
         color: white;
         font-family: $fuente;
         font-size: ($texto-estandar)+3px;
+    }
+    .nav {
+        @include nav;
+        padding-top: 2rem !important;
     }
 }
 

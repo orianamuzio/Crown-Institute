@@ -17,6 +17,9 @@ body {
     header {
         grid-area: header;
         background-color: #7F0101;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .nav {
             @include nav;
             .item-nav {
@@ -28,6 +31,10 @@ body {
         grid-area: main;
         background-color: #002261;
     }
+}
+
+.boton-inicio {
+    @include boton-inicio
 }
 
 footer {

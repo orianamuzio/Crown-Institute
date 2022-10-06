@@ -9,6 +9,12 @@
 
 }
 
+@mixin titulo {
+    color: white;
+    font-family: $fuente;
+    font-size: $titulo-header;
+    padding-top: 1rem;
+}
 
 @mixin nav {
     display: flex;
@@ -16,7 +22,7 @@
     list-style: none;
     text-decoration: none;
     text-align: right;
-    padding: 2rem 0 1rem 0;
+    padding: 1rem 0 1rem 0;
 }
 
 @mixin item-nav {
@@ -45,19 +51,32 @@
     padding: 15px;
 }
 
+@mixin titulo-cajas-covid {
+    color: white;
+    font-family: $fuente;
+    font-size: ($texto-estandar)+10px;
+    text-align: center;
+}
+
 @mixin transicion-minicajas-inicio {
     transition: 1s;
     transition-timing-function: ease-in-out;
 }
 
+@mixin tamaño-minicajas-cursos {
+    width: 240px;
+    height: 145px;
+}
+
 @mixin boton-inicio {
-    color: white;
-    background-color: #0022616e;
-    font-family: $fuente;
-    font-size: $tamaño-boton;
     list-style: none;
     text-decoration: none;
+    color: white;
+    background-color: #002261e2;
+    font-family: $fuente;
+    font-size: ($texto-estandar)+5px;
     position: fixed;
-    right: 50px;
     bottom: 30px;
+    left: 30px;
+    padding: 10px;
 }

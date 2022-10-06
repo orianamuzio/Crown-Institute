@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Contacto</title>
 </head>
@@ -16,77 +18,91 @@
 <body id="body-contacto">
 
     <header>
-        <h1 class="titulo-contacto">Contactate con nosotros!</h1>
-        <nav class="nav-contacto">
-            <li><a href="../index.html" class="item-nav-contacto">Inicio</a></li>
-            <li><a href="./cursos.html" class="item-nav-contacto">Cursos</a></li>
-            <li><a href="./examenes.html" class="item-nav-contacto">Exámenes</a></li>
-            <li><a href="./covid-19.html" class="item-nav-contacto">COVID-19</a></li>
-            <li><a href="./contacto.html" class="item-nav-contacto">Contacto</a></li>
+        <h1 class="titulo">Contactate con nosotros!</h1>
+        <nav class="nav">
+            <li><a href="../index.html" class="item-nav">Inicio</a></li>
+            <li><a href="./cursos.html" class="item-nav">Cursos</a></li>
+            <li><a href="./examenes.html" class="item-nav">Exámenes</a></li>
+            <li><a href="./covid-19.html" class="item-nav">COVID-19</a></li>
+            <li><a href="./contacto.html" class="item-nav">Contacto</a></li>
         </nav>
     </header>
 
     <main>
-        
-        <section>
+
+        <section class="section-contacto">
             <div>
-                <h2 class="titulo-formulario-contacto">Información de contacto</h2>
+                <h2 class="titulo-formulario">Información de contacto</h2>
+                <form action="" method="post" class="formulario-contacto">
+                    <div>
+                        <label for="Nombre">Nombre completo</label><input type="text" id="Nombre"
+                            placeholder="Ingrese nombre y apellido" class="espacio-input" required>
+                    </div>
+                    <div>
+                        <label for="Email">Email</label><input type="email" id="Email" placeholder="ejemplo@gmail.com"
+                            class="espacio-input" required>
+                    </div>
+                    <div>
+                        <label for="telefono">Número de teléfono</label><input type="number" name="telefono" id="Telefono"
+                            placeholder="Número de teléfono" class="espacio-input" required>
+                    </div>
+                    <div>
+                        <p>Indica el perfil que mejor se adapte a ti:</p>
+                        <input type="radio"> Soy un estudiante/quiero estudiar
+                    </div>
+                    <div>
+                        <input type="radio"> Soy un padre/madre/tutor
+                    </div>
+                    <div>
+                        <input type="radio"> Soy un docente/futuro docente de inglés
+                    </div>
+                    <div>
+                        Qué te interesa consultar?
+                        <br>
+                        <textarea name="" id="" cols="30" rows="5"></textarea>
+                    </div>
+                    <div>
+                        <p>Hacé click en "Sí" si querés recibir noticias y promociones</p>
+                        <input type="radio" name="Si" id="Si"> Sí
+                    </div>
+                    <div class="botones-formulario">
+                        <input type="submit" name="" id="Enviar">
+                        <input type="reset" name="" id="Limpiar">
+                    </div>
+                </form>
             </div>
-            <form action="" method="post" class="formulario-contacto">
-                <div>
-                    <label for="Nombre">Nombre completo</label><input type="text" id="Nombre"
-                        placeholder="Ingrese nombre y apellido" class="espacio-input" required>
-                </div>
-                <div>
-                    <label for="Email">Email</label><input type="email" id="Email" placeholder="ejemplo@gmail.com"
-                        class="espacio-input" required>
-                </div>
-                <div>
-                    <label for="telefono">Número de teléfono</label><input type="number" name="telefono" id="Telefono"
-                        placeholder="Número de teléfono" class="espacio-input" required>
-                </div>
-                <div>
-                    <p>Indica el perfil que mejor se adapte a ti:</p>
-                    <input type="radio"> Soy un estudiante/quiero estudiar
-                </div>
-                <div>
-                    <input type="radio"> Soy un padre/madre/tutor
-                </div>
-                <div>
-                    <input type="radio"> Soy un docente/futuro docente de inglés
-                </div>
-                <div>
-                    Qué te interesa consultar?
-                    <br>
-                    <textarea name="" id="" cols="30" rows="5"></textarea>
-                </div>
-                <div>
-                    <p>Hacé click en "Sí" si querés recibir noticias y promociones</p>
-                    <input type="radio" name="Si" id="Si"> Sí
-                </div>
-                <div>
-                    <input type="submit" name="" id="Enviar">
-                    <input type="reset" name="" id="Limpiar">
-                </div>
-            </form>
+            
+            <div class="ubicacion-contacto">
+                <p class="titulo-ubi-contacto">Ubicación</p>
+                <iframe class="mapa-contacto"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.1090758472806!2d-56.21471048538184!3d-34.727644871571584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a1d35ecd718b09%3A0xed25a69d52d005c9!2sCrown%20Institute!5e0!3m2!1ses-419!2suy!4v1664995764781!5m2!1ses-419!2suy"
+                    width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
 
         <ul>
             <li><a href="../index.html" class="boton-inicio">Volver al inicio</a></li>
         </ul>
-            
+
     </main>
 
     <footer>
         <div>
             Correo electrónico: crowninstitute2015@gmail.com
-        </div> 
+        </div>
         <div>
             Teléfono: 23646474
         </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
 </body>
 
 </header>
+
 </html>

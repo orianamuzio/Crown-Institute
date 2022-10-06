@@ -1,9 +1,6 @@
 .header-inicio {
   position: sticky;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+  top: 0; }
   .header-inicio .titulo-inicio {
     color: white;
     font-family: "Raleway", sans-serif;
@@ -13,6 +10,14 @@
     color: white;
     font-family: "Raleway", sans-serif;
     font-size: 18px; }
+  .header-inicio .nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    text-align: right;
+    padding: 1rem 0 1rem 0;
+    padding-top: 2rem !important; }
 
 .imagenes-inicio {
   display: flex;
@@ -123,6 +128,326 @@
     font-size: 35px;
     margin-bottom: 3rem; }
 
+.titulo {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  padding-top: 1rem; }
+
+.texto-uno-cursos {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 17px;
+  padding: 5rem 12rem 0 12rem;
+  text-align: center; }
+
+.section-uno-cursos {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 7rem 0 7rem; }
+  .section-uno-cursos .texto-dos-cursos {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 17px;
+    width: 40%;
+    padding-top: 4.5rem;
+    text-align: center; }
+  .section-uno-cursos .caja-uno-cursos {
+    background-color: white;
+    width: 50%;
+    height: 320px;
+    margin-top: 1rem; }
+    .section-uno-cursos .caja-uno-cursos .flex-cajas {
+      display: flex;
+      justify-content: space-evenly; }
+      .section-uno-cursos .caja-uno-cursos .flex-cajas .minicaja-viajes {
+        background-color: #002261e2;
+        width: 240px;
+        height: 145px;
+        align-items: center;
+        margin: 10px 0; }
+        .section-uno-cursos .caja-uno-cursos .flex-cajas .minicaja-viajes .titulo-minicaja-viajes {
+          color: white;
+          font-family: "Raleway", sans-serif;
+          font-size: 25px;
+          text-align: center;
+          padding: 3.5rem 0;
+          backface-visibility: hidden; }
+      .section-uno-cursos .caja-uno-cursos .flex-cajas .minicaja-trabajo {
+        background-color: #002261e2;
+        width: 240px;
+        height: 145px;
+        margin: 10px 0; }
+        .section-uno-cursos .caja-uno-cursos .flex-cajas .minicaja-trabajo .titulo-minicaja-trabajo {
+          color: white;
+          font-family: "Raleway", sans-serif;
+          font-size: 25px;
+          text-align: center;
+          padding: 3.5rem 0;
+          backface-visibility: hidden; }
+      .section-uno-cursos .caja-uno-cursos .flex-cajas .transicion-minicajas-cursos {
+        transition-timing-function: ease-out;
+        transition: 1s;
+        overflow: hidden; }
+      .section-uno-cursos .caja-uno-cursos .flex-cajas .transicion-minicajas-cursos:hover {
+        transform: rotateY(180deg); }
+    .section-uno-cursos .caja-uno-cursos .flex-cajas {
+      display: flex;
+      justify-content: space-evenly; }
+      .section-uno-cursos .caja-uno-cursos .flex-cajas .minicaja-hobby {
+        background-color: #002261e2;
+        width: 240px;
+        height: 145px; }
+        .section-uno-cursos .caja-uno-cursos .flex-cajas .minicaja-hobby .titulo-minicaja-hobby {
+          color: white;
+          font-family: "Raleway", sans-serif;
+          font-size: 25px;
+          text-align: center;
+          padding: 3.5rem 0;
+          backface-visibility: hidden; }
+      .section-uno-cursos .caja-uno-cursos .flex-cajas .minicaja-profesionales {
+        background-color: #002261e2;
+        width: 240px;
+        height: 145px; }
+        .section-uno-cursos .caja-uno-cursos .flex-cajas .minicaja-profesionales .titulo-minicaja-profesionales {
+          color: white;
+          font-family: "Raleway", sans-serif;
+          font-size: 20px;
+          text-align: center;
+          padding: 3.5rem 0;
+          backface-visibility: hidden; }
+      .section-uno-cursos .caja-uno-cursos .flex-cajas .transicion-minicajas-cursos {
+        transition-timing-function: ease-out;
+        transition: 2s; }
+      .section-uno-cursos .caja-uno-cursos .flex-cajas .transicion-minicajas-cursos:hover {
+        transform: rotateY(180deg); }
+
+.titulo {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  padding-top: 1rem; }
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  text-decoration: none;
+  text-align: right;
+  padding: 1rem 0 1rem 0; }
+  .nav .item-nav {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 2em; }
+
+.section-uno-examenes {
+  display: flex;
+  flex-direction: column; }
+  .section-uno-examenes .caja-local-examenes {
+    display: flex;
+    width: 65%;
+    margin: 5rem 18% 0 18%;
+    justify-content: space-between; }
+    .section-uno-examenes .caja-local-examenes .texto-local .titulo-cajas-examenes {
+      color: white;
+      font-family: "Raleway", sans-serif;
+      font-size: 35px; }
+    .section-uno-examenes .caja-local-examenes .texto-local .texto-cajas-examenes {
+      color: white;
+      font-family: "Raleway", sans-serif;
+      font-size: 15px;
+      margin-right: 4rem; }
+    .section-uno-examenes .caja-local-examenes .imagen-uno-examenes {
+      width: 280px;
+      height: 250px; }
+  .section-uno-examenes .caja-examenes-internacionales {
+    display: flex;
+    width: 80%;
+    margin: 4rem 10% 0 10%; }
+    .section-uno-examenes .caja-examenes-internacionales .imagen-dos-examenes {
+      width: 400px;
+      height: 400px; }
+    .section-uno-examenes .caja-examenes-internacionales .texto-internacionales {
+      margin-left: 3rem; }
+      .section-uno-examenes .caja-examenes-internacionales .texto-internacionales .titulo-cajas-examenes {
+        color: white;
+        font-family: "Raleway", sans-serif;
+        font-size: 35px; }
+      .section-uno-examenes .caja-examenes-internacionales .texto-internacionales .texto-cajas-examenes {
+        color: white;
+        font-family: "Raleway", sans-serif;
+        font-size: 15px; }
+      .section-uno-examenes .caja-examenes-internacionales .texto-internacionales .lista-niveles-examenes {
+        color: white;
+        font-family: "Raleway", sans-serif;
+        font-size: 15px;
+        text-decoration: none; }
+
+.titulo {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  padding-top: 1rem; }
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  text-decoration: none;
+  text-align: right;
+  padding: 1rem 0 1rem 0; }
+  .nav .item-nav {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 2em; }
+
+.titulo-covid {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 35px;
+  width: 60%;
+  text-align: center;
+  padding-top: 5rem;
+  margin: 0 20%; }
+
+.section-uno-covid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 5rem 10%; }
+  .section-uno-covid .flex-cajas-covid {
+    display: flex;
+    justify-content: space-between; }
+    .section-uno-covid .flex-cajas-covid .cajas-covid {
+      padding: 1rem 2rem; }
+      .section-uno-covid .flex-cajas-covid .cajas-covid .titulo-cajas-covid {
+        color: white;
+        font-family: "Raleway", sans-serif;
+        font-size: 25px;
+        text-align: center; }
+      .section-uno-covid .flex-cajas-covid .cajas-covid .texto {
+        color: white;
+        font-family: "Raleway", sans-serif;
+        font-size: 15px;
+        text-align: center; }
+  .section-uno-covid .imagen-uno-covid {
+    width: 400px;
+    height: 300px;
+    margin: 1rem; }
+  .section-uno-covid .flex-cajas-covid {
+    display: flex;
+    width: 100%;
+    margin: 1rem 0;
+    justify-content: space-between; }
+    .section-uno-covid .flex-cajas-covid .caja-proteccion-covid {
+      width: 700px;
+      margin-right: 3rem; }
+      .section-uno-covid .flex-cajas-covid .caja-proteccion-covid .titulo-cajas-covid {
+        color: white;
+        font-family: "Raleway", sans-serif;
+        font-size: 25px;
+        text-align: center; }
+      .section-uno-covid .flex-cajas-covid .caja-proteccion-covid .texto {
+        color: white;
+        font-family: "Raleway", sans-serif;
+        font-size: 15px;
+        text-align: center; }
+    .section-uno-covid .flex-cajas-covid .caja-covid-limpieza {
+      padding: 1rem 1rem;
+      margin-top: 1rem;
+      margin-right: 3.5rem;
+      width: 500px; }
+      .section-uno-covid .flex-cajas-covid .caja-covid-limpieza .titulo-cajas-covid {
+        color: white;
+        font-family: "Raleway", sans-serif;
+        font-size: 25px;
+        text-align: center; }
+      .section-uno-covid .flex-cajas-covid .caja-covid-limpieza .texto {
+        color: white;
+        font-family: "Raleway", sans-serif;
+        font-size: 15px;
+        text-align: center; }
+    .section-uno-covid .flex-cajas-covid .imagen-dos-covid {
+      width: 400px;
+      height: 300px;
+      margin: 1rem; }
+  .section-uno-covid .flex-caja-utiles {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 2rem; }
+    .section-uno-covid .flex-caja-utiles .imagen-tres-covid {
+      width: 400px;
+      height: 280px;
+      margin-right: 2rem; }
+    .section-uno-covid .flex-caja-utiles .caja-utiles-covid {
+      width: 400px;
+      padding: 1rem 1rem;
+      margin: 3rem 0 0 3rem; }
+      .section-uno-covid .flex-caja-utiles .caja-utiles-covid .titulo-cajas-covid {
+        color: white;
+        font-family: "Raleway", sans-serif;
+        font-size: 25px;
+        text-align: center; }
+      .section-uno-covid .flex-caja-utiles .caja-utiles-covid .texto {
+        color: white;
+        font-family: "Raleway", sans-serif;
+        font-size: 15px;
+        text-align: center; }
+
+.titulo {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  padding-top: 1rem; }
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  text-decoration: none;
+  text-align: right;
+  padding: 1rem 0 1rem 0; }
+  .nav .item-nav {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 2em; }
+
+.section-contacto {
+  display: flex;
+  width: 100%;
+  padding-top: 5rem; }
+  .section-contacto div .titulo-formulario {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 25px;
+    padding-left: 6rem; }
+  .section-contacto div .formulario-contacto {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    padding-left: 6rem;
+    display: flex;
+    flex-direction: column; }
+    .section-contacto div .formulario-contacto .espacio-input {
+      margin: 0.4em; }
+    .section-contacto div .formulario-contacto .botones-formulario {
+      margin-top: 1rem; }
+  .section-contacto .ubicacion-contacto {
+    margin-left: 8rem; }
+    .section-contacto .ubicacion-contacto .titulo-ubi-contacto {
+      color: white;
+      font-family: "Raleway", sans-serif;
+      font-size: 25px; }
+
 * {
   margin: 0;
   padding: 0;
@@ -136,14 +461,17 @@ body {
   grid-template-areas: "header header header header header" "main main main main main" "footer footer footer footer footer"; }
   body header {
     grid-area: header;
-    background-color: #7F0101; }
+    background-color: #7F0101;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
     body header .nav {
       display: flex;
       flex-direction: row;
       list-style: none;
       text-decoration: none;
       text-align: right;
-      padding: 2rem 0 1rem 0; }
+      padding: 1rem 0 1rem 0; }
       body header .nav .item-nav {
         color: white;
         font-family: "Raleway", sans-serif;
@@ -153,6 +481,18 @@ body {
   body main {
     grid-area: main;
     background-color: #002261; }
+
+.boton-inicio {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  background-color: #002261e2;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  padding: 10px; }
 
 footer {
   grid-area: footer;
