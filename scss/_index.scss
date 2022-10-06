@@ -1,0 +1,121 @@
+.header-inicio {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .titulo-inicio {
+        color: white;
+        font-family: $fuente;
+        font-size: $titulo-header;
+        padding-top: 1rem;
+    };
+    .subtitulo-inicio {
+        color: white;
+        font-family: $fuente;
+        font-size: ($texto-estandar)+3px;
+    }
+}
+
+.imagenes-inicio {
+    display: flex;
+    flex-direction: row;
+    .imagen-uno-inicio {
+        width: 30%;
+        height: 303px;
+    };
+    .imagen-dos-inicio {
+        height: 303px;
+        width: 70%;
+    }
+}
+
+.section-uno-inicio {
+    display: grid;
+    grid-template-columns: 20% 1fr 1fr 1fr 20%;
+    grid-template-areas: ". logo texto texto .";
+    margin-top: 6rem;
+    .logo-inicio {
+        grid-area: logo;
+        margin-top: 1.6rem;
+        .logo-grande-inicio {
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    .titulo-y-texto {
+        grid-area: texto;
+        .titulo-inicio-dos {
+            color: white;
+            font-family: $fuente;
+            font-size: $titulo;
+        };
+        .texto-uno-inicio {
+            color: white;
+            font-family: $fuente;
+            font-size: $texto-estandar;
+            margin-top: 1rem;
+        }
+    }
+}
+
+.minicajas-inicio {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: 15% 1fr 6% 1fr 6% 1fr 15%;
+    grid-template-areas: ". caja1 . caja2 . caja3 .";
+    .minicaja1 {
+        grid-area: caja1;
+        background-color: white;
+        .titulo-minicaja {
+           @include titulo-minicaja
+        };
+        .texto-minicaja {
+           @include texto-minicaja;
+           padding-top: 3.5rem;
+        }
+    }
+    .minicaja2 {
+        grid-area: caja2;
+        background-color: white;
+        .titulo-minicaja {
+            @include titulo-minicaja
+         };
+         .texto-minicaja {
+            @include texto-minicaja;
+            padding-top: 3.5rem;
+         }
+    }
+    .minicaja3 {
+        grid-area: caja3;
+        background-color: white;
+        .titulo-minicaja {
+            @include titulo-minicaja
+         };
+         .texto-minicaja {
+            @include texto-minicaja
+         }
+    }
+    .transicion-minicaja {
+        transition: 1s;
+        transition-timing-function: ease-in-out;
+    }
+    .transicion-minicaja:hover {
+        transform: scale(1.2);
+    }
+}
+
+.ubicacion-inicio {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    align-items: center;
+    padding-bottom: 3rem;
+    .titulo-ubi-inicio {
+        color: white;
+        font-family: $fuente;
+        font-size: $titulo;
+        margin-bottom: 3rem;
+    }
+}

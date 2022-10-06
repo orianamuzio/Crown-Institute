@@ -1,0 +1,165 @@
+.header-inicio {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .header-inicio .titulo-inicio {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    padding-top: 1rem; }
+  .header-inicio .subtitulo-inicio {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px; }
+
+.imagenes-inicio {
+  display: flex;
+  flex-direction: row; }
+  .imagenes-inicio .imagen-uno-inicio {
+    width: 30%;
+    height: 303px; }
+  .imagenes-inicio .imagen-dos-inicio {
+    height: 303px;
+    width: 70%; }
+
+.section-uno-inicio {
+  display: grid;
+  grid-template-columns: 20% 1fr 1fr 1fr 20%;
+  grid-template-areas: ". logo texto texto .";
+  margin-top: 6rem; }
+  .section-uno-inicio .logo-inicio {
+    grid-area: logo;
+    margin-top: 1.6rem; }
+    .section-uno-inicio .logo-inicio .logo-grande-inicio {
+      width: 150px;
+      height: 150px; }
+  .section-uno-inicio .titulo-y-texto {
+    grid-area: texto; }
+    .section-uno-inicio .titulo-y-texto .titulo-inicio-dos {
+      color: white;
+      font-family: "Raleway", sans-serif;
+      font-size: 35px; }
+    .section-uno-inicio .titulo-y-texto .texto-uno-inicio {
+      color: white;
+      font-family: "Raleway", sans-serif;
+      font-size: 15px;
+      margin-top: 1rem; }
+
+.minicajas-inicio {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: 15% 1fr 6% 1fr 6% 1fr 15%;
+  grid-template-areas: ". caja1 . caja2 . caja3 ."; }
+  .minicajas-inicio .minicaja1 {
+    grid-area: caja1;
+    background-color: white; }
+    .minicajas-inicio .minicaja1 .titulo-minicaja {
+      color: white;
+      background-color: #7F0101;
+      font-family: "Raleway", sans-serif;
+      font-size: 25px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-align: center; }
+    .minicajas-inicio .minicaja1 .texto-minicaja {
+      color: black;
+      font-family: "Raleway", sans-serif;
+      font-size: 15px;
+      text-align: center;
+      padding: 15px;
+      padding-top: 3.5rem; }
+  .minicajas-inicio .minicaja2 {
+    grid-area: caja2;
+    background-color: white; }
+    .minicajas-inicio .minicaja2 .titulo-minicaja {
+      color: white;
+      background-color: #7F0101;
+      font-family: "Raleway", sans-serif;
+      font-size: 25px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-align: center; }
+    .minicajas-inicio .minicaja2 .texto-minicaja {
+      color: black;
+      font-family: "Raleway", sans-serif;
+      font-size: 15px;
+      text-align: center;
+      padding: 15px;
+      padding-top: 3.5rem; }
+  .minicajas-inicio .minicaja3 {
+    grid-area: caja3;
+    background-color: white; }
+    .minicajas-inicio .minicaja3 .titulo-minicaja {
+      color: white;
+      background-color: #7F0101;
+      font-family: "Raleway", sans-serif;
+      font-size: 25px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-align: center; }
+    .minicajas-inicio .minicaja3 .texto-minicaja {
+      color: black;
+      font-family: "Raleway", sans-serif;
+      font-size: 15px;
+      text-align: center;
+      padding: 15px; }
+  .minicajas-inicio .transicion-minicaja {
+    transition: 1s;
+    transition-timing-function: ease-in-out; }
+  .minicajas-inicio .transicion-minicaja:hover {
+    transform: scale(1.2); }
+
+.ubicacion-inicio {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+  align-items: center;
+  padding-bottom: 3rem; }
+  .ubicacion-inicio .titulo-ubi-inicio {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 35px;
+    margin-bottom: 3rem; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 350px 1fr 300px;
+  grid-template-areas: "header header header header header" "main main main main main" "footer footer footer footer footer"; }
+  body header {
+    grid-area: header;
+    background-color: #7F0101; }
+    body header .nav {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      text-decoration: none;
+      text-align: right;
+      padding: 2rem 0 1rem 0; }
+      body header .nav .item-nav {
+        color: white;
+        font-family: "Raleway", sans-serif;
+        font-size: 15px;
+        text-decoration: none;
+        margin-left: 2em; }
+  body main {
+    grid-area: main;
+    background-color: #002261; }
+
+footer {
+  grid-area: footer;
+  background-color: #7F0101;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 2em; }

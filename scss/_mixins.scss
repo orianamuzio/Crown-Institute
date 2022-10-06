@@ -1,0 +1,63 @@
+@mixin grid-body {
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 350px 1fr 300px;
+    grid-template-areas: "header header header header header"
+        "main main main main main"
+        "footer footer footer footer footer";
+
+}
+
+
+@mixin nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    text-align: right;
+    padding: 2rem 0 1rem 0;
+}
+
+@mixin item-nav {
+    color: white;
+    font-family: $fuente;
+    font-size: $texto-estandar;
+    text-decoration: none;
+    margin-left: 2em;
+}
+
+@mixin titulo-minicaja {
+    color: white;
+    background-color: #7F0101;
+    font-family: $fuente;
+    font-size: ($texto-estandar)+10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+@mixin texto-minicaja {
+    color: black;
+    font-family: $fuente;
+    font-size: $texto-estandar;
+    text-align: center;
+    padding: 15px;
+}
+
+@mixin transicion-minicajas-inicio {
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+@mixin boton-inicio {
+    color: white;
+    background-color: #0022616e;
+    font-family: $fuente;
+    font-size: $tamaño-boton;
+    list-style: none;
+    text-decoration: none;
+    position: fixed;
+    right: 50px;
+    bottom: 30px;
+}

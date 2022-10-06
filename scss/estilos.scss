@@ -1,0 +1,42 @@
+@import "./mixins";
+@import "./variables";
+@import "./index";
+@import "./cursos";
+@import "./examenes";
+@import "./COVID-19";
+@import "./contacto";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    @include grid-body;
+    header {
+        grid-area: header;
+        background-color: #7F0101;
+        .nav {
+            @include nav;
+            .item-nav {
+                @include item-nav
+            }
+        }
+    };
+    main {
+        grid-area: main;
+        background-color: #002261;
+    }
+}
+
+footer {
+    grid-area: footer;
+    background-color: #7F0101;
+    color: white;
+    font-family: $fuente;
+    font-size: $texto-estandar;
+    display: flex;
+    flex-direction: column;
+    padding: 2em
+}
