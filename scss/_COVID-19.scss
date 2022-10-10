@@ -47,6 +47,9 @@
         width: 400px;
         height: 300px;
         margin: 1rem;
+        border-radius: 20px 20px 20px 20px;
+        -moz-border-radius: 20px 20px 20px 20px;
+        -webkit-border-radius: 20px 20px 20px 20px;
     }
     .flex-cajas-covid {
         display: flex;
@@ -85,6 +88,9 @@
             width: 400px;
             height: 300px;
             margin: 1rem;
+            border-radius: 20px 20px 20px 20px;
+            -moz-border-radius: 20px 20px 20px 20px;
+            -webkit-border-radius: 20px 20px 20px 20px;
         }
     }
     .flex-caja-utiles {
@@ -96,6 +102,9 @@
             width: 400px;
             height: 280px;
             margin-right: 2rem;
+            border-radius: 20px 20px 20px 20px;
+            -moz-border-radius: 20px 20px 20px 20px;
+            -webkit-border-radius: 20px 20px 20px 20px;
         }
         .caja-utiles-covid {
             width: 400px;

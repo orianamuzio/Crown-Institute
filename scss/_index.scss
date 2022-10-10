@@ -66,9 +66,13 @@
     display: grid;
     grid-template-columns: 15% 1fr 6% 1fr 6% 1fr 15%;
     grid-template-areas: ". caja1 . caja2 . caja3 .";
+    
     .minicaja1 {
         grid-area: caja1;
         background-color: white;
+        border-radius: 20px 20px 20px 20px;
+        -moz-border-radius: 20px 20px 20px 20px;
+        -webkit-border-radius: 20px 20px 20px 20px;
         .titulo-minicaja {
            @include titulo-minicaja
         };
@@ -80,6 +84,9 @@
     .minicaja2 {
         grid-area: caja2;
         background-color: white;
+        border-radius: 20px 20px 20px 20px;
+        -moz-border-radius: 20px 20px 20px 20px;
+        -webkit-border-radius: 20px 20px 20px 20px;
         .titulo-minicaja {
             @include titulo-minicaja
          };
@@ -90,7 +97,10 @@
     }
     .minicaja3 {
         grid-area: caja3;
-        background-color: white;
+        background-color: white; border-radius: 20px 20px 20px 20px;
+        -moz-border-radius: 20px 20px 20px 20px;
+        -webkit-border-radius: 20px 20px 20px 20px;
+    }
         .titulo-minicaja {
             @include titulo-minicaja
          };
@@ -105,18 +115,18 @@
     .transicion-minicaja:hover {
         transform: scale(1.2);
     }
-}
+
 
 .ubicacion-inicio {
     display: flex;
     flex-direction: column;
-    margin-top: 6rem;
     align-items: center;
-    padding-bottom: 3rem;
+    margin-top: 5rem;
+    padding-bottom: 4rem;
     .titulo-ubi-inicio {
         color: white;
         font-family: $fuente;
         font-size: $titulo;
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
     }
 }

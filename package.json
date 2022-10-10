@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/orianamuzio/Crown-Institute#readme",
   "dependencies": {
+    "animate.css": "^4.1.1",
     "node-sass": "^7.0.3",
     "nodemon": "^2.0.20"
   }

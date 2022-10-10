@@ -59,7 +59,10 @@
   grid-template-areas: ". caja1 . caja2 . caja3 ."; }
   .minicajas-inicio .minicaja1 {
     grid-area: caja1;
-    background-color: white; }
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px; }
     .minicajas-inicio .minicaja1 .titulo-minicaja {
       color: white;
       background-color: #7F0101;
@@ -77,7 +80,10 @@
       padding-top: 3.5rem; }
   .minicajas-inicio .minicaja2 {
     grid-area: caja2;
-    background-color: white; }
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px; }
     .minicajas-inicio .minicaja2 .titulo-minicaja {
       color: white;
       background-color: #7F0101;
@@ -95,38 +101,43 @@
       padding-top: 3.5rem; }
   .minicajas-inicio .minicaja3 {
     grid-area: caja3;
-    background-color: white; }
-    .minicajas-inicio .minicaja3 .titulo-minicaja {
-      color: white;
-      background-color: #7F0101;
-      font-family: "Raleway", sans-serif;
-      font-size: 25px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      text-align: center; }
-    .minicajas-inicio .minicaja3 .texto-minicaja {
-      color: black;
-      font-family: "Raleway", sans-serif;
-      font-size: 15px;
-      text-align: center;
-      padding: 15px; }
-  .minicajas-inicio .transicion-minicaja {
-    transition: 1s;
-    transition-timing-function: ease-in-out; }
-  .minicajas-inicio .transicion-minicaja:hover {
-    transform: scale(1.2); }
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px; }
+  .minicajas-inicio .titulo-minicaja {
+    color: white;
+    background-color: #7F0101;
+    font-family: "Raleway", sans-serif;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center; }
+  .minicajas-inicio .texto-minicaja {
+    color: black;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    padding: 15px; }
+
+.transicion-minicaja {
+  transition: 1s;
+  transition-timing-function: ease-in-out; }
+
+.transicion-minicaja:hover {
+  transform: scale(1.2); }
 
 .ubicacion-inicio {
   display: flex;
   flex-direction: column;
-  margin-top: 6rem;
   align-items: center;
-  padding-bottom: 3rem; }
+  margin-top: 5rem;
+  padding-bottom: 4rem; }
   .ubicacion-inicio .titulo-ubi-inicio {
     color: white;
     font-family: "Raleway", sans-serif;
     font-size: 35px;
-    margin-bottom: 3rem; }
+    margin-bottom: 1rem; }
 
 .titulo {
   color: white;
@@ -261,14 +272,20 @@
       margin-right: 4rem; }
     .section-uno-examenes .caja-local-examenes .imagen-uno-examenes {
       width: 280px;
-      height: 250px; }
+      height: 250px;
+      border-radius: 20px 20px 20px 20px;
+      -moz-border-radius: 20px 20px 20px 20px;
+      -webkit-border-radius: 20px 20px 20px 20px; }
   .section-uno-examenes .caja-examenes-internacionales {
     display: flex;
     width: 80%;
     margin: 4rem 10% 0 10%; }
     .section-uno-examenes .caja-examenes-internacionales .imagen-dos-examenes {
       width: 400px;
-      height: 400px; }
+      height: 400px;
+      border-radius: 20px 20px 20px 20px;
+      -moz-border-radius: 20px 20px 20px 20px;
+      -webkit-border-radius: 20px 20px 20px 20px; }
     .section-uno-examenes .caja-examenes-internacionales .texto-internacionales {
       margin-left: 3rem; }
       .section-uno-examenes .caja-examenes-internacionales .texto-internacionales .titulo-cajas-examenes {
@@ -284,6 +301,9 @@
         font-family: "Raleway", sans-serif;
         font-size: 15px;
         text-decoration: none; }
+        .section-uno-examenes .caja-examenes-internacionales .texto-internacionales .lista-niveles-examenes .titulo-lista-examenes {
+          list-style: none;
+          text-decoration: none; }
 
 .titulo {
   color: white;
@@ -338,7 +358,10 @@
   .section-uno-covid .imagen-uno-covid {
     width: 400px;
     height: 300px;
-    margin: 1rem; }
+    margin: 1rem;
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px; }
   .section-uno-covid .flex-cajas-covid {
     display: flex;
     width: 100%;
@@ -375,7 +398,10 @@
     .section-uno-covid .flex-cajas-covid .imagen-dos-covid {
       width: 400px;
       height: 300px;
-      margin: 1rem; }
+      margin: 1rem;
+      border-radius: 20px 20px 20px 20px;
+      -moz-border-radius: 20px 20px 20px 20px;
+      -webkit-border-radius: 20px 20px 20px 20px; }
   .section-uno-covid .flex-caja-utiles {
     display: flex;
     justify-content: space-between;
@@ -384,7 +410,10 @@
     .section-uno-covid .flex-caja-utiles .imagen-tres-covid {
       width: 400px;
       height: 280px;
-      margin-right: 2rem; }
+      margin-right: 2rem;
+      border-radius: 20px 20px 20px 20px;
+      -moz-border-radius: 20px 20px 20px 20px;
+      -webkit-border-radius: 20px 20px 20px 20px; }
     .section-uno-covid .flex-caja-utiles .caja-utiles-covid {
       width: 400px;
       padding: 1rem 1rem;
