@@ -1,6 +1,5 @@
 .header-inicio {
-    position: sticky;
-    top: 0;
+    z-index: 10;
     .titulo-inicio {
         color: white;
         font-family: $fuente;
@@ -12,33 +11,17 @@
         font-family: $fuente;
         font-size: ($texto-estandar)+3px;
     }
-    .nav {
-        @include nav;
-        padding-top: 2rem !important;
-    }
 }
 
-.imagenes-inicio {
-    display: flex;
-    flex-direction: row;
-    .imagen-uno-inicio {
-        width: 30%;
-        height: 303px;
-    };
-    .imagen-dos-inicio {
-        height: 303px;
-        width: 70%;
-    }
-}
 
 .section-uno-inicio {
     display: grid;
     grid-template-columns: 20% 1fr 1fr 1fr 20%;
     grid-template-areas: ". logo texto texto .";
-    margin-top: 6rem;
+    margin-top: 5rem;
     .logo-inicio {
         grid-area: logo;
-        margin-top: 1.6rem;
+        margin-top: 3rem;
         .logo-grande-inicio {
             width: 150px;
             height: 150px;
@@ -62,7 +45,7 @@
 }
 
 .minicajas-inicio {
-    margin-top: 6rem;
+    margin-top: 5rem;
     display: grid;
     grid-template-columns: 15% 1fr 6% 1fr 6% 1fr 15%;
     grid-template-areas: ". caja1 . caja2 . caja3 .";
@@ -129,4 +112,58 @@
         font-size: $titulo;
         margin-bottom: 1rem;
     }
+}
+
+// DESKTOP FIRST
+
+@media only screen and (max-width:1200px) {
+
+}
+
+@media only screen and (max-width:1024px) {
+    .section-uno-inicio {
+        grid-template-areas: ". logo texto texto texto";
+        .texto-uno-inicio {
+            padding-right: 5rem;
+        }
+    }
+    .logo-inicio {
+        position: absolute;
+        top: 36rem;
+        left: 10rem;
+    }
+    .minicajas-inicio {
+        grid-template-columns: 5% 1fr 5% 1fr 5% 1fr 5%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .section-uno-inicio {
+        display: flex;
+        flex-direction: column;
+        .titulo-inicio-dos {
+            text-align: center;
+        }
+        .texto-uno-inicio {
+            text-align: center;
+            padding-right: 0;
+            margin: 0 3rem;
+        }
+        .logo-grande-inicio {
+            visibility: hidden;
+        }
+    }
+    .minicajas-inicio {
+        display: flex;
+        flex-direction: column;
+        margin: 6rem 3rem;
+        .minicaja1 {
+            margin-bottom: 2rem;
+        }
+        .minicaja2 {
+            margin-bottom: 2rem;
+        }
+    }
+    
+    
 }
