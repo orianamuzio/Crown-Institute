@@ -4,6 +4,7 @@
 
 .nav {
     @include nav;
+
     .item-nav {
         @include item-nav
     }
@@ -12,17 +13,20 @@
 .section-uno-examenes {
     display: flex;
     flex-direction: column;
+
     .caja-local-examenes {
         display: flex;
         width: 65%;
         margin: 5rem 18% 0 18%;
         justify-content: space-between;
+
         .texto-local {
             .titulo-cajas-examenes {
                 color: white;
                 font-family: $fuente;
                 font-size: $titulo;
             }
+
             .texto-cajas-examenes {
                 color: white;
                 font-family: $fuente;
@@ -30,6 +34,7 @@
                 margin-right: 4rem;
             }
         }
+
         .imagen-uno-examenes {
             width: 280px;
             height: 250px;
@@ -38,10 +43,12 @@
             -webkit-border-radius: 20px 20px 20px 20px;
         }
     }
+
     .caja-examenes-internacionales {
         display: flex;
         width: 80%;
         margin: 4rem 10% 0 10%;
+
         .imagen-dos-examenes {
             width: 400px;
             height: 400px;
@@ -49,23 +56,99 @@
             -moz-border-radius: 20px 20px 20px 20px;
             -webkit-border-radius: 20px 20px 20px 20px;
         }
+
         .texto-internacionales {
             margin-left: 3rem;
+
             .titulo-cajas-examenes {
                 color: white;
                 font-family: $fuente;
                 font-size: $titulo;
             }
+
             .texto-cajas-examenes {
                 color: white;
                 font-family: $fuente;
                 font-size: $texto-estandar;
             }
+
             .lista-niveles-examenes {
                 color: white;
                 font-family: $fuente;
                 font-size: $texto-estandar;
                 text-decoration: none;
+
+                .titulo-lista-examenes {
+                    list-style: none;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .caja-local-examenes {
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+
+        .texto-local {
+            margin: 0px;
+            padding: 0px;
+
+            .titulo-cajas-examenes {
+                margin: 0;
+                text-align: center;
+            }
+
+            .texto-cajas-examenes {
+                margin: 0;
+                padding-right: 0;
+                text-align: center;
+            }
+        }
+
+        .imagen-uno-examenes {
+            visibility: hidden;
+        }
+    }
+
+    .caja-examenes-internacionales {
+        flex-direction: column;
+        width: 90%;
+        margin: 0;
+
+        .imagen-dos-examenes {
+            width: 200px;
+            height: 200px;
+            border-radius: 20px 20px 20px 20px;
+            -moz-border-radius: 20px 20px 20px 20px;
+            -webkit-border-radius: 20px 20px 20px 20px;
+        }
+
+        .texto-internacionales {
+            margin-left: 0;
+            padding: 0 0 0 0;
+
+            .titulo-cajas-examenes {
+                margin-top: 3rem;
+                text-align: center;
+            }
+
+            .texto-cajas-examenes {
+                color: white;
+                font-family: $fuente;
+                font-size: $texto-estandar;
+            }
+
+            .lista-niveles-examenes {
+                color: white;
+                font-family: $fuente;
+                font-size: $texto-estandar;
+                text-decoration: none;
+
                 .titulo-lista-examenes {
                     list-style: none;
                     text-decoration: none;

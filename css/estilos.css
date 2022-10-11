@@ -125,10 +125,6 @@
     grid-template-areas: ". logo texto texto texto"; }
     .section-uno-inicio .texto-uno-inicio {
       padding-right: 5rem; }
-  .logo-inicio {
-    position: absolute;
-    top: 36rem;
-    left: 10rem; }
   .minicajas-inicio {
     grid-template-columns: 5% 1fr 5% 1fr 5% 1fr 5%; } }
 
@@ -318,6 +314,53 @@
         .section-uno-examenes .caja-examenes-internacionales .texto-internacionales .lista-niveles-examenes .titulo-lista-examenes {
           list-style: none;
           text-decoration: none; }
+
+@media only screen and (max-width: 480px) {
+  .caja-local-examenes {
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    padding: 0px; }
+    .caja-local-examenes .texto-local {
+      margin: 0px;
+      padding: 0px; }
+      .caja-local-examenes .texto-local .titulo-cajas-examenes {
+        margin: 0;
+        text-align: center; }
+      .caja-local-examenes .texto-local .texto-cajas-examenes {
+        margin: 0;
+        padding-right: 0;
+        text-align: center; }
+    .caja-local-examenes .imagen-uno-examenes {
+      visibility: hidden; }
+  .caja-examenes-internacionales {
+    flex-direction: column;
+    width: 90%;
+    margin: 0; }
+    .caja-examenes-internacionales .imagen-dos-examenes {
+      width: 200px;
+      height: 200px;
+      border-radius: 20px 20px 20px 20px;
+      -moz-border-radius: 20px 20px 20px 20px;
+      -webkit-border-radius: 20px 20px 20px 20px; }
+    .caja-examenes-internacionales .texto-internacionales {
+      margin-left: 0;
+      padding: 0 0 0 0; }
+      .caja-examenes-internacionales .texto-internacionales .titulo-cajas-examenes {
+        margin-top: 3rem;
+        text-align: center; }
+      .caja-examenes-internacionales .texto-internacionales .texto-cajas-examenes {
+        color: white;
+        font-family: "Raleway", sans-serif;
+        font-size: 15px; }
+      .caja-examenes-internacionales .texto-internacionales .lista-niveles-examenes {
+        color: white;
+        font-family: "Raleway", sans-serif;
+        font-size: 15px;
+        text-decoration: none; }
+        .caja-examenes-internacionales .texto-internacionales .lista-niveles-examenes .titulo-lista-examenes {
+          list-style: none;
+          text-decoration: none; } }
 
 .titulo {
   color: white;
