@@ -283,11 +283,11 @@
     width: 65%;
     margin: 5rem 18% 0 18%;
     justify-content: space-between; }
-    .section-uno-examenes .caja-local-examenes .texto-local .titulo-cajas-examenes {
+    .section-uno-examenes .caja-local-examenes .titulo-cajas-examenes {
       color: white;
       font-family: "Raleway", sans-serif;
       font-size: 35px; }
-    .section-uno-examenes .caja-local-examenes .texto-local .texto-cajas-examenes {
+    .section-uno-examenes .caja-local-examenes .texto-cajas-examenes {
       color: white;
       font-family: "Raleway", sans-serif;
       font-size: 15px;
@@ -328,51 +328,49 @@
           text-decoration: none; }
 
 @media only screen and (max-width: 480px) {
-  .caja-local-examenes {
+  .section-uno .caja-local-examenes {
     flex-direction: column;
     width: 100%;
     margin: 0px;
     padding: 0px; }
-    .caja-local-examenes .texto-local {
-      margin: 0px;
-      padding: 0px; }
-      .caja-local-examenes .texto-local .titulo-cajas-examenes {
-        margin: 0;
-        text-align: center; }
-      .caja-local-examenes .texto-local .texto-cajas-examenes {
-        margin: 0;
-        padding-right: 0;
-        text-align: center; }
-    .caja-local-examenes .imagen-uno-examenes {
-      visibility: hidden; }
-  .caja-examenes-internacionales {
-    flex-direction: column;
-    width: 90%;
-    margin: 0; }
-    .caja-examenes-internacionales .imagen-dos-examenes {
-      width: 200px;
-      height: 200px;
-      border-radius: 20px 20px 20px 20px;
-      -moz-border-radius: 20px 20px 20px 20px;
-      -webkit-border-radius: 20px 20px 20px 20px; }
-    .caja-examenes-internacionales .texto-internacionales {
-      margin-left: 0;
-      padding: 0; }
-      .caja-examenes-internacionales .texto-internacionales .titulo-cajas-examenes {
-        margin-top: 3rem;
-        text-align: center; }
-      .caja-examenes-internacionales .texto-internacionales .texto-cajas-examenes {
-        color: white;
-        font-family: "Raleway", sans-serif;
-        font-size: 15px; }
-      .caja-examenes-internacionales .texto-internacionales .lista-niveles-examenes {
-        color: white;
-        font-family: "Raleway", sans-serif;
-        font-size: 15px;
+    .section-uno .caja-local-examenes .titulo-cajas-examenes {
+      margin: 0;
+      text-align: center; }
+    .section-uno .caja-local-examenes .titulo-cajas-examenes .texto-cajas-examenes {
+      margin: 0;
+      padding-right: 0;
+      text-align: center; }
+  .imagen-uno-examenes {
+    display: none; } }
+
+.caja-examenes-internacionales {
+  flex-direction: column;
+  width: 90%;
+  margin: 0; }
+  .caja-examenes-internacionales .imagen-dos-examenes {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px; }
+  .caja-examenes-internacionales .texto-internacionales {
+    margin-left: 0;
+    padding: 0; }
+    .caja-examenes-internacionales .texto-internacionales .titulo-cajas-examenes {
+      margin-top: 3rem;
+      text-align: center; }
+    .caja-examenes-internacionales .texto-internacionales .texto-cajas-examenes {
+      color: white;
+      font-family: "Raleway", sans-serif;
+      font-size: 15px; }
+    .caja-examenes-internacionales .texto-internacionales .lista-niveles-examenes {
+      color: white;
+      font-family: "Raleway", sans-serif;
+      font-size: 15px;
+      text-decoration: none; }
+      .caja-examenes-internacionales .texto-internacionales .lista-niveles-examenes .titulo-lista-examenes {
+        list-style: none;
         text-decoration: none; }
-        .caja-examenes-internacionales .texto-internacionales .lista-niveles-examenes .titulo-lista-examenes {
-          list-style: none;
-          text-decoration: none; } }
 
 .titulo {
   color: white;
@@ -594,7 +592,9 @@ body {
   height: 100vh;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 350px 1fr 300px;
-  grid-template-areas: "header header header header header" "main main main main main" "footer footer footer footer footer"; }
+  grid-template-areas: "header header header header header"
+ "main main main main main"
+ "footer footer footer footer footer"; }
   body header {
     grid-area: header;
     background-color: #7F0101;
