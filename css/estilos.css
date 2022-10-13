@@ -132,14 +132,14 @@
   .section-uno-inicio {
     display: flex;
     flex-direction: column; }
+    .section-uno-inicio .logo-inicio {
+      display: none; }
     .section-uno-inicio .titulo-inicio-dos {
       text-align: center; }
     .section-uno-inicio .texto-uno-inicio {
       text-align: center;
       padding-right: 0;
       margin: 0 3rem; }
-    .section-uno-inicio .logo-grande-inicio {
-      visibility: hidden; }
   .minicajas-inicio {
     display: flex;
     flex-direction: column;
@@ -243,6 +243,18 @@
       .section-uno-cursos .caja-uno-cursos .flex-cajas .transicion-minicajas-cursos:hover {
         transform: rotateY(180deg); }
 
+.boton-inicio-cursos {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  background-color: #002261e2;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  position: fixed;
+  bottom: 30px;
+  left: 30px !important;
+  padding: 10px; }
+
 .titulo {
   color: white;
   font-family: "Raleway", sans-serif;
@@ -345,7 +357,7 @@
       -webkit-border-radius: 20px 20px 20px 20px; }
     .caja-examenes-internacionales .texto-internacionales {
       margin-left: 0;
-      padding: 0 0 0 0; }
+      padding: 0; }
       .caja-examenes-internacionales .texto-internacionales .titulo-cajas-examenes {
         margin-top: 3rem;
         text-align: center; }
@@ -514,7 +526,9 @@
     color: white;
     font-family: "Raleway", sans-serif;
     font-size: 25px;
-    padding-left: 6rem; }
+    padding-left: 6rem;
+    margin-bottom: 2rem;
+    text-decoration: underline; }
   .section-contacto div .formulario-contacto {
     color: white;
     font-family: "Raleway", sans-serif;
@@ -523,8 +537,14 @@
     padding-left: 6rem;
     display: flex;
     flex-direction: column; }
-    .section-contacto div .formulario-contacto .espacio-input {
-      margin: 0.4em; }
+    .section-contacto div .formulario-contacto .margen-input {
+      margin: 13px 0; }
+    .section-contacto div .formulario-contacto .margen-preguntas {
+      margin-top: 2rem; }
+    .section-contacto div .formulario-contacto .margen-consulta {
+      margin-top: 1rem; }
+    .section-contacto div .formulario-contacto .margen-siono {
+      margin-top: 1rem; }
     .section-contacto div .formulario-contacto .botones-formulario {
       margin-top: 1rem; }
   .section-contacto .ubicacion-contacto {
@@ -533,6 +553,36 @@
       color: white;
       font-family: "Raleway", sans-serif;
       font-size: 25px; }
+
+@media only screen and (max-width: 1201px) {
+  .boton-inicio {
+    left: 1010px !important; } }
+
+@media only screen and (max-width: 1024px) {
+  .ubicacion-contacto {
+    margin-right: 3rem; }
+  .boton-inicio {
+    visibility: hidden; } }
+
+@media only screen and (max-width: 48px) {
+  .titulo {
+    font-size: 30px; }
+  .item-nav {
+    font-size: 10px; }
+  .section-contacto {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 5rem; }
+  div .titulo-formulario {
+    font-size: 22px;
+    padding-left: 5rem; }
+  .ubicacion-contacto {
+    margin: 3rem 0; }
+    .ubicacion-contacto .titulo-ubi-contacto {
+      text-align: center;
+      font-size: 22px; }
+      .ubicacion-contacto .titulo-ubi-contacto .mapa-contacto {
+        padding-left: 1px; } }
 
 * {
   margin: 0;
@@ -577,8 +627,9 @@ body {
   font-size: 20px;
   position: fixed;
   bottom: 30px;
-  left: 30px;
-  padding: 10px; }
+  left: 1080px;
+  padding: 10px;
+  width: 160px; }
 
 footer {
   grid-area: footer;

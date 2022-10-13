@@ -4,6 +4,7 @@
 
 .nav {
     @include nav;
+
     .item-nav {
         @include item-nav
     }
@@ -13,13 +14,17 @@
     display: flex;
     width: 100%;
     padding-top: 5rem;
+
     div {
         .titulo-formulario {
             color: white;
             font-family: $fuente;
             font-size: ($texto-estandar)+10px;
             padding-left: 6rem;
+            margin-bottom: 2rem;
+            text-decoration: underline;
         }
+
         .formulario-contacto {
             color: white;
             font-family: $fuente;
@@ -27,25 +32,94 @@
             line-height: 1.3;
             padding-left: 6rem;
             display: flex;
-            flex-direction: column; 
-            .espacio-input {
-                margin: $espacio-input;
+            flex-direction: column;
+
+            .margen-input {
+                margin: 13px 0;
             }
+
+            .margen-preguntas {
+                margin-top: 2rem;
+            }
+
+            .margen-consulta {
+                margin-top: 1rem;
+            }
+
+            .margen-siono {
+                margin-top: 1rem;
+            }
+
             .botones-formulario {
                 margin-top: 1rem;
             }
         }
-        
+
     }
+
     .ubicacion-contacto {
         margin-left: 8rem;
+
         .titulo-ubi-contacto {
             color: white;
             font-family: $fuente;
             font-size: ($texto-estandar)+10px;
-            
+
         }
     }
-    
-    
+}
+
+@media only screen and (max-width: 1201px) {
+    .boton-inicio {
+        left: 1010px !important;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .ubicacion-contacto {
+        margin-right: 3rem;
+    }
+
+    .boton-inicio {
+        visibility: hidden;
+    }
+}
+
+
+@media only screen and (max-width: 48px) {
+    .titulo {
+        font-size: 30px
+    }
+
+    .item-nav {
+        font-size: 10px;
+    }
+
+    .section-contacto {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 5rem;
+    }
+
+    div {
+        .titulo-formulario {
+            font-size: ($texto-estandar)+7px;
+            padding-left: 5rem;
+        }
+    }
+
+    .ubicacion-contacto {
+        margin: 3rem 0;
+
+        .titulo-ubi-contacto {
+            text-align: center;
+            font-size: ($texto-estandar)+7px;
+
+            .mapa-contacto {
+                padding-left: 1px;
+            }
+        }
+    }
+
+
 }

@@ -106,34 +106,16 @@
     }
 }
 
-// .cards-cursos {
-//     display: flex;
-//     width: 40%;
-// }
+.boton-inicio-cursos {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    background-color: #002261e2;
+    font-family: $fuente;
+    font-size: ($texto-estandar)+5px;
+    position: fixed;
+    bottom: 30px;
+    left: 30px !important;
+    padding: 10px;
+}
 
-// .container-card {
-//     background-color: rgb(153, 100, 31);
-//     width: 600px;
-//     height: 230px;
-//     align-items: center;
-//     .card-father {
-//         margin: 0.2rem;
-//         .card {
-//             width: 250px;
-//             height: 100%;
-//             transform-style: preserve-3d;
-//             .card-front {
-
-//             }
-//             .card-back {
-//                 background-color: #002261e2;
-//                 backface-visibility: hidden;
-//                 transform-style: preserve-3d;
-//             }
-//         }
-//     }
-//     .card-father:hover .card{
-//         transform: rotateY(180deg);
-//         transition: 0.5seg;
-//         }
-// }

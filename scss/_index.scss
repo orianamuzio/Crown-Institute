@@ -136,6 +136,9 @@
     .section-uno-inicio {
         display: flex;
         flex-direction: column;
+        .logo-inicio {
+            display: none;
+        }
         .titulo-inicio-dos {
             text-align: center;
         }
@@ -143,9 +146,6 @@
             text-align: center;
             padding-right: 0;
             margin: 0 3rem;
-        }
-        .logo-grande-inicio {
-            visibility: hidden;
         }
     }
     .minicajas-inicio {

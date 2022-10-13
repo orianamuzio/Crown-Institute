@@ -37,19 +37,16 @@
                 <h2 class="titulo-formulario">Información de contacto</h2>
                 <form action="" method="post" class="formulario-contacto">
                     <div>
-                        <label for="Nombre">Nombre completo</label><input type="text" id="Nombre"
-                            placeholder="Ingrese nombre y apellido" class="espacio-input" required>
+                        <input type="text" id="Nombre" placeholder="Nombre y apellido" required>
+                    </div>
+                    <div class="margen-input">
+                        <input type="Email" id="Email" placeholder="ejemplo@gmail.com" required>
                     </div>
                     <div>
-                        <label for="Email">Email</label><input type="email" id="Email" placeholder="ejemplo@gmail.com"
-                            class="espacio-input" required>
+                        <input type="number" name="telefono" id="Telefono" placeholder="Número de teléfono" required>
                     </div>
                     <div>
-                        <label for="telefono">Número de teléfono</label><input type="number" name="telefono"
-                            id="Telefono" placeholder="Número de teléfono" class="espacio-input" required>
-                    </div>
-                    <div>
-                        <p>Indica el perfil que mejor se adapte a ti:</p>
+                        <p class="margen-preguntas">Indica el perfil que mejor se adapte a ti:</p>
                         <input type="radio"> Soy un estudiante/quiero estudiar
                     </div>
                     <div>
@@ -59,12 +56,11 @@
                         <input type="radio"> Soy un docente/futuro docente de inglés
                     </div>
                     <div>
-                        Qué te interesa consultar?
-                        <br>
+                        <p class="margen-consulta">Qué te interesa consultar?</p>
                         <textarea name="" id="" cols="30" rows="5"></textarea>
                     </div>
                     <div>
-                        <p>Hacé click en "Sí" si querés recibir noticias y promociones</p>
+                        <p class="margen-siono">Hacé click en "Sí" si querés recibir noticias y promociones</p>
                         <input type="radio" name="Si" id="Si"> Sí
                     </div>
                     <div class="botones-formulario">
@@ -76,10 +72,9 @@
 
             <div class="ubicacion-contacto">
                 <p class="titulo-ubi-contacto">Ubicación</p>
-                <iframe class="mapa-contacto"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.1090758472806!2d-56.21471048538184!3d-34.727644871571584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a1d35ecd718b09%3A0xed25a69d52d005c9!2sCrown%20Institute!5e0!3m2!1ses-419!2suy!4v1664995764781!5m2!1ses-419!2suy"
-                    width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="mapa-contacto">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.1090758472806!2d-56.21471048538184!3d-34.727644871571584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a1d35ecd718b09%3A0xed25a69d52d005c9!2sCrown%20Institute!5e0!3m2!1ses-419!2suy!4v1665599158794!5m2!1ses-419!2suy" width="470" height="470" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </section>
 
