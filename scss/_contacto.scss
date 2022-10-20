@@ -86,7 +86,7 @@
 }
 
 
-@media only screen and (max-width: 48px) {
+@media only screen and (max-width: 480px) {
     .titulo {
         font-size: 30px
     }
@@ -109,15 +109,16 @@
     }
 
     .ubicacion-contacto {
-        margin: 3rem 0;
+        margin-left:0;
+        padding: 0;
 
         .titulo-ubi-contacto {
             text-align: center;
             font-size: ($texto-estandar)+7px;
-
-            .mapa-contacto {
-                padding-left: 1px;
-            }
+            margin-top: 4rem;
+        }
+        .mapa-contacto {
+            width: 200px;
         }
     }
 
