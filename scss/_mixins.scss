@@ -33,41 +33,6 @@
     margin-left: 2em;
 }
 
-@mixin titulo-minicaja {
-    color: white;
-    background-color: #7F0101;
-    font-family: $fuente;
-    font-size: ($texto-estandar)+10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-}
-
-@mixin texto-minicaja {
-    color: black;
-    font-family: $fuente;
-    font-size: $texto-estandar;
-    text-align: center;
-    padding: 15px;
-}
-
-@mixin titulo-cajas-covid {
-    color: white;
-    font-family: $fuente;
-    font-size: ($texto-estandar)+10px;
-    text-align: center;
-}
-
-@mixin transicion-minicajas-inicio {
-    transition: 1s;
-    transition-timing-function: ease-in-out;
-}
-
-@mixin tamaño-minicajas-cursos {
-    width: 240px;
-    height: 145px;
-}
-
 @mixin boton-inicio {
     list-style: none;
     text-decoration: none;
