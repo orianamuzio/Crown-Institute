@@ -29,10 +29,6 @@ body {
     }
 }
 
-.boton-inicio {
-    @include boton-inicio
-}
-
 footer {
     grid-area: footer;
     background-color: #7F0101;

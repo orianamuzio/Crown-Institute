@@ -14,6 +14,7 @@
     display: flex;
     width: 100%;
     padding-top: 5rem;
+    padding-bottom: 3rem;
     div {
         .titulo-formulario {
             color: white;
@@ -58,18 +59,10 @@
     }
 }
 
-@media only screen and (max-width: 1201px) {
-    .boton-inicio {
-        left: 1010px !important;
-    }
-}
 
 @media only screen and (max-width: 1024px) {
     .ubicacion-contacto {
         margin-right: 3rem;
-    }
-    .boton-inicio {
-        visibility: hidden;
     }
 }
 
@@ -81,7 +74,6 @@
         font-size: 10px;
     }
     .section-contacto {
-        
         flex-direction: column;
         width: 100%;
         padding-top: 5rem;
@@ -92,11 +84,10 @@
             }
         }
         .ubicacion-contacto {
-            margin-left: 0;
-            margin-right: 0;
+            margin: 3rem 0 3rem 3rem;
             padding: 0;
             .mapa-contacto {
-                width: 200px;
+                width: 400px;
             }
         }
     }

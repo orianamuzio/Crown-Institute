@@ -25,6 +25,7 @@
   display: flex;
   width: 100%;
   padding-top: 5rem;
+  padding-bottom: 3rem;
 }
 .section-contacto div .titulo-formulario {
   color: white;
@@ -67,17 +68,9 @@
   font-size: 25px;
 }
 
-@media only screen and (max-width: 1201px) {
-  .boton-inicio {
-    left: 1010px !important;
-  }
-}
 @media only screen and (max-width: 1024px) {
   .ubicacion-contacto {
     margin-right: 3rem;
-  }
-  .boton-inicio {
-    visibility: hidden;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -92,21 +85,16 @@
     width: 100%;
     padding-top: 5rem;
   }
-  div .titulo-formulario {
+  .section-contacto div .titulo-formulario {
     font-size: 22px;
     padding-left: 5rem;
   }
-  .ubicacion-contacto {
-    margin-left: 0;
+  .section-contacto .ubicacion-contacto {
+    margin: 3rem 0 3rem 3rem;
     padding: 0;
   }
-  .ubicacion-contacto .titulo-ubi-contacto {
-    text-align: center;
-    font-size: 22px;
-    margin-top: 4rem;
-  }
-  .ubicacion-contacto .mapa-contacto {
-    width: 200px;
+  .section-contacto .ubicacion-contacto .mapa-contacto {
+    width: 400px;
   }
 }
 * {
@@ -147,20 +135,6 @@ body header .nav .item-nav {
 body main {
   grid-area: main;
   background-color: #002261;
-}
-
-.boton-inicio {
-  list-style: none;
-  text-decoration: none;
-  color: white;
-  background-color: rgba(0, 34, 97, 0.8862745098);
-  font-family: "Raleway", sans-serif;
-  font-size: 20px;
-  position: fixed;
-  bottom: 30px;
-  left: 1080px;
-  padding: 10px;
-  width: 160px;
 }
 
 footer {
