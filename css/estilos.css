@@ -287,87 +287,13 @@ footer {
   text-align: center;
 }
 
-.section-uno-cursos {
+.imagenes-cursos {
   display: flex;
   justify-content: space-between;
-  margin: 3rem 7rem 0 7rem;
-  padding-bottom: 3rem;
+  margin: 3rem 4rem;
 }
 
-.texto-dos-cursos {
-  color: white;
-  font-family: 'Raleway', sans-serif;
-  font-size: 17px;
-  width: 40%;
-  padding-top: 4.5rem;
-  text-align: center;
-}
-
-.caja-uno-cursos {
-  background-color: white;
-  width: 37%;
-  height: 320px;
-  margin-top: 1rem;
-  margin-right: 3rem;
-  -webkit-box-shadow: 10px 10px 14px -1px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: 10px 10px 14px -1px rgba(0, 0, 0, 0.57);
-  box-shadow: 10px 10px 14px -1px rgba(0, 0, 0, 0.57);
-}
-
-.flex-cajas {
-  display: flex;
-}
-
-.minicajas-cursos {
-  background-color: #002261e2;
-  width: 250px;
-  height: 146px;
-  margin: 7px;
-}
-
-.titulo-minicajas-cursos {
-  color: white;
-  font-family: 'Raleway', sans-serif;
-  font-size: 25px;
-  text-align: center;
-  padding: 3.5rem 0;
-}
-
-.titulo-minicaja-profesionales {
-  color: white;
-  font-family: 'Raleway', sans-serif;
-  font-size: 20px;
-  text-align: center;
-  padding: 3.5rem 0;
-}
-
-.transicion-minicajas-cursos {
-  transition-timing-function: ease-out;
-  transition: 2s;
-}
-
-.transicion-minicajas-cursos:hover {
-  transform: rotateY(180deg);
-}
-
-.section-dos-cursos {
-  display: flex;
-  width: 90%;
-  margin: 3rem 5% 0 5%;
-  padding-bottom: 3rem;
-}
-
-.div-textos-cursos {
-  display: flex;
-  flex-direction: column;
-}
-
-.flex-textos-cursos {
-  display: flex;
-  width: 80%;
-}
-
-.imagen-uno-cursos {
+.imageness-cursos {
   width: 400px;
   height: 300px;
   margin-right: 3rem;
@@ -378,21 +304,28 @@ footer {
   box-shadow: 10px 10px 14px -1px rgba(0, 0, 0, 0.57);
 }
 
-.titulos-chicos {
+.texto-dos-cursos {
   color: white;
   font-family: 'Raleway', sans-serif;
-  font-size: 20px;
+  font-size: 17px;
+  margin: 7rem;
   text-align: center;
-  padding: 0;
 }
 
-.texto-normal {
-  color: white;
-  font-family: 'Raleway', sans-serif;
-  font-size: 14px;
-  padding: 1rem;
-  text-align: center;
+.minicajas-cursos {
+  margin-top: 5rem;
+  padding-bottom: 5rem;
+  display: grid;
+  grid-template-columns: 12% 1fr 3% 1fr 3% 1fr 3% 1fr 12%;
+  grid-template-areas: ". caja1 . caja2 . caja3 . caja4 .";
 }
+
+.minicaja4 {
+  grid-area: caja4;
+  background-color: white;
+  border-radius: 3px 3px 3px 3px;
+}
+
 
 @media only screen and (max-width: 1200px) {
   .div-imagen-cursos {
@@ -430,11 +363,11 @@ footer {
   .section-dos-cursos {
     flex-direction: column;
   }
-  
+
   .flex-textos-cursos {
     margin-left: 2rem;
   }
-  
+
   .div-imagen-cursos {
     padding: 1rem;
   }
@@ -537,21 +470,24 @@ footer {
     margin: 5rem 10% 0 10%;
     justify-content: space-between;
   }
+
   .titulo-cajas-examenes {
     color: white;
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
   }
-  
+
   .texto-cajas-examenes {
     color: white;
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
     margin-right: 4rem;
   }
+
   .imagen-uno-examenes {
     padding-left: 2rem;
   }
+
   .imagen-dos-examenes {
     margin-top: 5rem;
   }
@@ -693,9 +629,9 @@ footer {
   height: 280px;
   margin-right: 2rem;
   border-radius: 3px 3px 3px 3px;
-  -webkit-box-shadow: 10px 10px 14px -1px rgba(0,0,0,0.57);
-  -moz-box-shadow: 10px 10px 14px -1px rgba(0,0,0,0.57);
-  box-shadow: 10px 10px 14px -1px rgba(0,0,0,0.57);
+  -webkit-box-shadow: 10px 10px 14px -1px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 10px 10px 14px -1px rgba(0, 0, 0, 0.57);
+  box-shadow: 10px 10px 14px -1px rgba(0, 0, 0, 0.57);
 }
 
 @media only screen and (max-width: 1024px) {
